@@ -1,5 +1,5 @@
 {
-  "name": "sipa",
+  "name": "sipas",
   "version": "0.0.1",
   "description": "GitHub CLI Clone",
   "author": "opauwlo",
@@ -33,5 +33,6 @@
   "bugs": {
     "url": "https://github.com/opauwlo/sipa/issues"
   },
-  "homepage": "https://github.com/opauwlo/sipa"
+  "homepage": "https://github.com/opauwlo/sipa",
+  "devDependencies": {}
 }
