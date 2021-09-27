@@ -6,7 +6,8 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/opauwlo/sipa?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/opauwlo/sipa?style=for-the-badge)
 
-<img src="https://i.ibb.co/9YTQpVj/Peek-2021-09-22-18-03.gif" alt="gif show how this work">
+
+![gif show how this work](https://i.ibb.co/Xxc01BP/Peek-2021-09-27-10-55.gif)
 
 > s'ipas is a CLI for for creating easy api's in nodejs with templates, in the future with your help we hope it will be a framework. Just below you will see the folder structure off sipa.
 
@@ -29,7 +30,7 @@ sipa
 The project is still under development and future updates will focus on the following tasks:
 
 - [x] Add a cli for creating 
-- [ ] Add Yarn or Npm option
+- [ ] Add yarn or npm option
 - [ ] Add More Templates
 
 
@@ -62,7 +63,7 @@ npm i -g sipas
 CLI sipa:
 
 ```
-$ new sipas
+$ sipas
 ```
 ## 📫 Contributing to s'ipas
 
@@ -77,7 +78,7 @@ To contribute to s'ipas, follow these steps:
 Alternatively, consult the GitHub documentation [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 
-## 😄 Be one of the contributors add your template<br>
+## 😄 Be one of the contributors, add your template<br>
 
 ```js
 {
