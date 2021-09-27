@@ -1,6 +1,6 @@
 {
   "name": "sipas",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "GitHub CLI Clone",
   "author": "opauwlo",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "boilerplate"
   ],
   "bin": {
-    "new sipas": "bin/cli.js"
+    "sipas": "bin/cli.js"
   },
   "scripts": {
     "dev": "node bin/cli.js"
