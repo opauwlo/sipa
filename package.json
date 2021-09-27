@@ -1,17 +1,17 @@
 {
   "name": "sipas",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "GitHub CLI Clone",
   "author": "opauwlo",
   "license": "MIT",
   "main": "bin/cli.js",
   "keywords": [
     "express",
-    "CLI GitHc Clone",
+    "CLI GitHub Clone",
     "boilerplate"
   ],
   "bin": {
-    "sipa": "bin/cli.js"
+    "new sipas": "bin/cli.js"
   },
   "scripts": {
     "dev": "node bin/cli.js"

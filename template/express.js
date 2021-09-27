@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/prefer-default-export
 module.exports = [
   {
-    url: 'https://github.com/opauwlo/sipa.git',
+    url: 'https://github.com/opauwlo/node-js-boilerplate-api.git',
     title: 'js-express-mongodb-mvc',
     folder_structure: `
     api-boilerplate

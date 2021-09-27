@@ -54,7 +54,7 @@ To clone s'ipa, follow these steps:
 
 Linux, macOS and windows:
 ```
-npm i -g sipa
+npm i -g sipas
 ```
 
 ## ☕ Using s'ipa
@@ -62,7 +62,7 @@ npm i -g sipa
 CLI sipa:
 
 ```
-$ sipa
+$ new sipas
 ```
 ## 📫 Contributing to s'ipa
 
@@ -82,9 +82,12 @@ Alternatively, consult the GitHub documentation [how to create a pull request](h
 ```js
 {
     url: '<repo_url>',
-    name: '<repo_name>',
-    author: '<your_name>',
-    description: '<repo_desc>'
+    title: '<repo_title>',
+    
+    folder_structure: `bin
+                        ┣ cli.js
+                        ┗ log.js`
+    author: '<your_name>','
 }
 ```
 
