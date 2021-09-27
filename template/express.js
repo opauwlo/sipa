@@ -1,8 +1,9 @@
 // eslint-disable-next-line import/prefer-default-export
 module.exports = [
   {
-    url: 'https://github.com/opauwlo/node-js-boilerplate-api.git',
+    author: 'opauwlo',
     title: 'js-express-mongodb-mvc',
+    url: 'https://github.com/opauwlo/node-js-boilerplate-api.git',
     folder_structure: `
     api-boilerplate
     ┣ __tests__
@@ -33,6 +34,5 @@ module.exports = [
     ┣ ex.env
     ┣ package.json
     ┗ yarn.lock`,
-    author: 'opauwlo',
   },
 ];

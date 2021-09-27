@@ -7,7 +7,7 @@ const {Signale} = require('signale');
 exports.cli = () => {
   console.log(
     chalk.yellow(
-      figlet.textSync('sipa', { horizontalLayout: 'full', font: 'Standard' }),
+      figlet.textSync('sipas', { horizontalLayout: 'full', font: 'Standard' }),
     ),
   );
 };
@@ -39,9 +39,9 @@ exports.info = (data) => {
   };
 
   const template = new Signale(option);
-  data.url && template.url(data.url);
-  data.title && template.title(data.title);
   data.author && template.author(data.author);
+  data.title && template.title(data.title);
+  data.url && template.url(data.url);
   data.folder_structure && template.folder_structure(data.folder_structure);
 };
 
