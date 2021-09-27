@@ -7,7 +7,7 @@ const clone = require('git-clone');
 const log = require('./log.js');
 
 
-const inputProjectName = () => new Promise((resolve, reject) => {
+const getProjectName = () => new Promise((resolve, reject) => {
   inquirer.prompt([
     {
       type: 'input',
@@ -28,7 +28,7 @@ const inputProjectName = () => new Promise((resolve, reject) => {
 
 const selectedFramework = () => new Promise(async (resolve, reject) => {
   let framework = await readdir(path.join(__dirname, '../template'), { withFileTypes: true });
-  framework = framework.filter((p) => !p.isDirectory()).map((p) => (p.name).replace('.js', '').replace(/\b[a-z]/, (letter) => letter.toUpperCase()));
+  framework = framework.filter((f) => !f.isDirectory()).map((f) => (f.name).replace('.js', '').replace(/\b[a-z]/, (letter) => letter.toUpperCase()));
 
   inquirer.prompt([
     {
@@ -53,7 +53,7 @@ const selectedTemplate = (framework) => new Promise((resolve, reject) => {
     {
       type: 'list',
       name: 'template',
-      message: `the framework you choose is ${framework}. Select the template that you want: `,
+      message: `the framework you choose is ${ framework }. Select the template that you want: `,
       choices: template,
     },
   ])
@@ -90,7 +90,7 @@ const decideTemplate = (template) => new Promise((resolve, reject) => {
 const cloneProject = (project, template) => new Promise((resolve, reject) => {
   try {
     const projectName = project === 'selected-template-name' ? 'sipa-api' : project;
-    clone(template.url, `./${projectName}`);
+    clone(template.url, `./${ projectName }`);
     log.interactive(projectName);
     resolve();
   } catch (error) {
@@ -103,7 +103,7 @@ const createProject = async () => {
     log.cli();
     let decide; let
       info;
-    const { project } = await inputProjectName();
+    const { project } = await getProjectName();
 
     do {
       const { framework } = await selectedFramework();
@@ -117,4 +117,5 @@ const createProject = async () => {
     console.error(error);
   }
 };
+
 createProject();
